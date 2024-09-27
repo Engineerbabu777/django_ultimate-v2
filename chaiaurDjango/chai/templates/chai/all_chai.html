@@ -1,4 +1,4 @@
-
+{% comment %} 
 <!DOCTYPE html>
 
 <html>
@@ -11,6 +11,19 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        
+        <h1>All Chais</h2>
+
+            {% for chai in chais %}
+                {{chai}}
+            {% endfor %}
     </body>
-</html>
+</html> {% endcomment %}
+
+{% for chai in chais %}
+<p>{{chai}}</p>
+{% endfor %}
+
+<h1>All Chais</h2>
+
+
+ 
